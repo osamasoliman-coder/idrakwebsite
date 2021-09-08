@@ -347,7 +347,6 @@
                                 @error('name')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
-
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" name="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" style="background-color: #F1E6D2;color: white;"  required/>
