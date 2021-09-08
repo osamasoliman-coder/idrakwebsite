@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <div class="container" style="margin-top: 150px;">
+    <div class="container-fluid" style="margin-top: 150px;">
 
         <div class="section-title">
             <h2>OUR SERVICES</h2>

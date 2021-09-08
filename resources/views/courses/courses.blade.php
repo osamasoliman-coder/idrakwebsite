@@ -3,7 +3,7 @@
 @section('content')
     <!-- ======= Courses Section ======= -->
     <section id="team" class="team section-bg" style="background-color: #FFFFFF;margin-top: 70px;">
-        <div class="container" data-aos="fade-up">
+        <div class="container-fluid" data-aos="fade-up">
 
             <div class="section-title">
                 <h2>OUR COURSES</h2>

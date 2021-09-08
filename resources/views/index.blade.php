@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero">
         <div class=" position-relative" data-aos="fade-up" data-aos-delay="100">
             <img class="hero-img" src="assets//img//website/background.jpeg" alt="" style="width: 100%">
         </div>
@@ -308,22 +308,22 @@
                             <div class="phone">
                                 <i class="icofont-phone icons-contact"></i>
 
-                                <p style="color: #303642">+971 56 666 52 94</p>
-                                <p style="color: #303642">+971 56 666 52 94</p>
+                                <p><a href="tel:+971566665294" style="color: #303642">+971 56 666 52 94</a></p>
+                                <p><a href="tel:+971565474488" style="color: #303642">+971 56 547 44 88</a></p>
                             </div>
 
                             <div class="data" style="margin-bottom: 30px;margin-top: 15px;">
-                                <a href="">
+                                <a href="https://Instagram.com/idraksport" target="_blank">
                                     <i class="icofont-instagram social-data-contact"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://twitter.com/idraksport" target="_blank">
                                     <i class="icofont-twitter social-data-contact"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://facebook.com/idraksport" target="_blank">
                                     <i class="icofont-facebook social-data-contact"></i>
                                 </a>
 
-                                <a href="">
+                                <a href="#" class="name">
 
                                     <p class="website-title-contact">@idraksport</p>
                                 </a>
@@ -338,15 +338,16 @@
                         <form action="{{ route('send.mail.from.home') }}" method="post">
                             @csrf
                             @if(Session::has('success_message'))
-                            <div class="alert alert-success" style="margin-top: 15px;">
-                                <strong>Success</strong> {{Session::get('success_message')}}
-                            </div>
+                                <div class="alert alert-success" style="margin-top: 15px;">
+                                    <strong>Success</strong> {{Session::get('success_message')}}
+                                </div>
                             @endif
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control"  placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" style="background-color: #F1E6D2;color: white;"  required/>
                                 @error('name')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
+
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" name="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" style="background-color: #F1E6D2;color: white;"  required/>

@@ -1,5 +1,5 @@
 <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
 
         <h1 class="logo mr-auto"><a href="{{ route('home.index') }}">
                 <img src="{{ asset('assets/img/website/logo.png') }}" alt="" style="width: 70px;height: 70px;">

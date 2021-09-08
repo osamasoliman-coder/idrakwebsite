@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
-    <div class="container" style="margin-top: 150px;">
+    <div class="container-fluid" style="margin-top: 150px;">
 
-            <div class="section-title">
-                <h2>OUR SERVICES</h2>
-            </div>
+        <div class="section-title">
+            <h2>OUR SERVICES</h2>
+        </div>
 
 
         <div class="row">
@@ -14,7 +14,7 @@
                      style="width: 100%;height: 650px;margin-top: 20px;">
             </div>
             <div class="col-md-8 col-sm-12" style="margin-top: 50px;">
-               <h5 style="color: black">SPORT CLUBS & RECREATION FACILITY MANAGEMENT</h5>
+                <h5 style="color: black">SPORT CLUBS & RECREATION FACILITY MANAGEMENT</h5>
                 <p style="font-size: 13px;">Idrak Sport provides comprehensive services for sports facilities implementing latest methods in management that contribute to the development of the facilities. Our team has great experience in the sports Industry and they will work hard to achieve your goals. We offer various services in line with your business requirements, including:</p>
 
                 <p style="font-weight: bold;"><img src="{{asset('assets/img/website/simple.png')}}" alt="">Management services</p>
